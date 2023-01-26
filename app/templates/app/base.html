@@ -1,0 +1,85 @@
+{% load static %}
+
+<link
+    rel="stylesheet"
+	type="text/css"
+	href="{% static 'app/css/styl.css' %}"
+/>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Главная</title>
+	<link rel = "icon" href = "https://studizba.com/uploads/high-schools/57-urfu-im-elcina.png"type= "image/x-icon">
+
+</head>
+<body>
+	<div class="container">
+		<!-- Header -->
+		<div class="row flex-nowrap sticky-top">
+			<header class="navbar navbar-expand-lg">
+				<a href="{% url 'Home' %}" class="logo"> <img src="https://studizba.com/uploads/high-schools/57-urfu-im-elcina.png" alt="logo" width="40" height="40"> </a>
+				<dev class="">
+				  
+				<a class="nav2" href="{% url 'Home' %}"><h2>аналитик</h2></a>
+			  
+				</dev>
+			  </header>
+		</div>
+		
+		<!-- Header End -->
+		<ul class="nav">
+			<li>
+			  <i class="fa fa-home"></i>
+			  <div class="animated_slideInLeft"><a href="{% url 'Home' %}"><button  onclick="test11()">Главная</button></a></div>
+			</li>
+			<li>
+			  <i class="fa fa-user"></i>
+			  <div class="animated_slideInLeft"><a href="{% url 'Demand' %}"><button  onclick="test11()">Востребованность</button></a></div>
+			</li>
+			<li>
+			  <i class="fa fa-certificate"></i>
+			  <div class="animated_slideInLeft"><a href="{% url 'Geography' %}"> <button  onclick="test11()">География</button></a></div>
+			</li>
+			<li>
+			  <i class="fa fa-desktop"></i>
+			  <div class="animated_slideInLeft"><a href="{% url 'Skills' %}"><button  onclick="test11()">Навыки</button></a>
+			</div>
+			</li>
+			<li>
+			  <i class="fa fa-align-right"></i>
+			  <div class="animated_slideInLeft"><a href="{% url 'Latest_vacancies' %}"><h5><button  onclick="test11()"><h5>Последние вакансии</h5></button></h5></a></div>
+			</li>
+		  </ul>
+			<!-- Sidebar end -->
+			<!-- Main -->
+			<div class="col py-3">
+				{% block content %}
+				{% endblock %}
+			</div>
+			<!-- Main End -->
+		</div>
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-12">
+				</div>
+				<div class="col-lg-12">
+				  <div class="copyright-text">
+					<h2>Абдальхамед Амр Гамал Ибрахем</h2>
+		
+					<h2>группа: ри 210948</h2>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+		<!-- Footer End -->
+	</div>	
+</body>
+</html>

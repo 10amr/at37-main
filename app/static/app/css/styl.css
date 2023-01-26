@@ -1,0 +1,310 @@
+  @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+
+  header {
+    background-color: #20232e;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 84px;
+    max-width: 1355px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  logo {
+    width: 200px; /* adjust as needed */
+    height: auto; /* maintain aspect ratio */
+    display: block; /* centers the image horizontally */
+    margin: 0 auto; /* centers the image vertically */
+    filter: brightness(100%); /* To make the image white*/
+}
+
+ 
+  .navigation a:hover {
+    color: #000000;
+  }
+
+  
+
+  .nav2{
+    color: white;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+    background: #f2f2f2;
+  }
+  body,
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .nav {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f2f2f2;
+    display: inline-block;
+    height: 42vh;
+    position: absolute;
+    padding-top: 69px;
+    position: fixed;
+    
+    
+  }
+
+
+  .nav li {
+    cursor: pointer;
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+    margin-bottom: -1px;
+    width: 80px;
+    height: 60px;
+    line-height: 59px;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    color: #ffffff;
+  }
+  .nav li div,
+  .nav li i {
+    position: absolute;
+    text-align: center;
+    animation-duration: 0.24s;
+  }
+  .nav li div {
+    margin-left: 54px;
+text-align: center;
+width: 186px;
+    
+  }
+  .nav li i {
+    line-height: 60px;
+    width: 80px;
+    z-index: 9;
+    background: #292929;
+  }
+  .nav li div {
+  /*   display: none; */
+    z-index: 1;
+    background: #20232e;
+    transform: translateX(-160px);
+    -webkit-transform: translateX(-160px);
+    -moz-transform: translateX(-160px);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+  }
+
+  .nav li:hover > div {
+    display: inline-block;
+    transform: translateX(0);
+  }
+  .nav li:hover i {
+    background: #214e57;
+  }
+  Button {
+    width: 186px;
+    height: 59px;
+    background-color: #20232e;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+  .hero {
+   
+    text-align: center;
+    padding-top: 4%;;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    height: 56vh;
+  }
+  h1 {
+    margin:6%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+  p {
+    margin: 6%;
+  
+    background: white;
+
+    text-align: center;
+    border: 5px solid #f2f2f2;
+
+  }
+  .credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
+  .credits a {
+    margin: 10px;
+  }
+
+  a {
+    color: #d9d6cb;
+  }
+
+
+
+
+
+  /*  max-width: 1173px; */
+
+
+
+
+
+
+
+  /* 
+  .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+
+  }
+
+  .navigation a {
+    color: rgb(48, 66, 233);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+  }
+
+  .navigation a:hover {
+    color: #000000;
+  }
+  */
+
+
+
+
+
+  /* footer */
+
+
+  footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #20232e;
+    padding: 1px 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
+  footer ul.social-icons {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(250,250,250,0.15);
+  }
+
+  footer ul.social-icons li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  footer ul.social-icons li:after {
+    content: "|";
+    color: #121212!important;
+      margin-left: 30px;
+  }
+
+  footer ul.social-icons li:last-child {
+    margin-right: 0 px;
+  }
+
+  footer ul.social-icons li:last-child::after {
+    display: none;
+  }
+
+  footer ul.social-icons li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    transition: all .3s;
+    margin-right: 0px
+  }
+
+  footer ul.social-icons li a:hover {
+    color: #f48840;
+  }
+
+  footer h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 4px
+  }
+
+  footer h2  {
+    color: white;
+  }
+
+  footer h2 a:hover {
+    color: white;
+    margin-right: 0px
+  }
+  /* footer */
+
+
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 8   px;
+    }
+  }
+  @media (orientation: portrait) {
+    /* CSS styles for portrait screens */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .text-section {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
